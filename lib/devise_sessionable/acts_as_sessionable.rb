@@ -9,7 +9,8 @@ module DeviseSessionable
       def acts_as_sessionable(_options = {})
         has_many :sessions,
                  as: :authable,
-                 class_name: 'DeviseSessionable::Session'
+                 class_name: 'DeviseSessionable::Session',
+                 dependent: :destroy
       end
     end
   end
