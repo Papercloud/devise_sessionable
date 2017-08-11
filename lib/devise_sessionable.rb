@@ -1,3 +1,4 @@
+require 'simple_token_authentication'
 require "devise_sessionable/engine"
 
 module DeviseSessionable

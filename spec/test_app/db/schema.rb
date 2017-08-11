@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 20170803015941) do
 
   create_table "devise_sessionable_sessions", force: :cascade do |t|
     t.string "authentication_token"
-    t.uuid "authable_id", null: false
+    t.integer "authable_id", null: false
     t.string "authable_type", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

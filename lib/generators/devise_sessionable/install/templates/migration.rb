@@ -8,7 +8,9 @@ class DeviseSessionableCreateSessions < ActiveRecord::Migration
       t.timestamps
     end
 
-    add_index :devise_sessionable_sessions, [:authable_id, :authable_type]
+    add_index :devise_sessionable_sessions,
+              [:authable_id, :authable_type],
+              name: 'index_devise_sessionable_sessions_on_authable'
     add_index :devise_sessionable_sessions, :authentication_token, unique: true
   end
 end
