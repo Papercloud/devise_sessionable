@@ -1,5 +1,5 @@
 PATH
-  remote: .
+  remote: ..
   specs:
     devise_sessionable (0.1.0)
       rails (> 4.2.7, < 6.0)
@@ -169,6 +169,7 @@ DEPENDENCIES
   factory_girl_rails
   pg
   pry
+  rails (~> 5.1.0)
   rspec-rails
   shoulda-matchers
 

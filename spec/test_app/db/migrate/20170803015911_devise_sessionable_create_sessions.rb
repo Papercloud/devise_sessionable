@@ -1,8 +1,8 @@
-class DeviseSessionableCreateSessions < ActiveRecord::Migration
+class DeviseSessionableCreateSessions < ActiveRecord::Migration[5.1]
   def change
     create_table :devise_sessionable_sessions do |t|
       t.string :authentication_token
-      t.uuid :authable_id, null: false
+      t.integer :authable_id, null: false
       t.string :authable_type, null: false
 
       t.timestamps
